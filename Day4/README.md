@@ -29,3 +29,4 @@
 ## 📚 Resources
 - [Chrome DevTools Overview](https://developer.chrome.com/docs/devtools/)
 - [VS Code Debugging](https://code.visualstudio.com/docs/editor/debugging)
+
