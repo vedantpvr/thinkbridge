@@ -1,4 +1,4 @@
-# 📘 ThinkBridge Training – Summary (Day 1 to Day 4)
+# 📘 ThinkBridge Training – Summary (Day 2 to Day 4)
 
 ## 📂 Day 2 – HTML Forms & Accessibility
 - Built a **registration form** with inputs, radio buttons, checkboxes, dropdowns, and validation.  
