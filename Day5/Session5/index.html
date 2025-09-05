@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transitions & Responsive Images Demo</title>
+  <link rel="stylesheet" href="components.css" />
+</head>
+<body style="font-family: Arial, sans-serif; background: #f9fafb; padding: 20px;">
+
+  <h1>CSS Transitions & Responsive Images</h1>
+
+  <!-- Button Example -->
+  <section>
+    <h2>Button with Hover/Focus Transition</h2>
+    <button class="btn">Hover Me</button>
+  </section>
+
+  <!-- Card Example -->
+  <section style="margin-top: 30px;">
+    <h2>Card with Hover Effect</h2>
+    <div class="card">
+      <h3>Card Title</h3>
+      <p>This is a simple card. Hover to see the interaction.</p>
+    </div>
+  </section>
+
+  <!-- Responsive Image Example -->
+  <section style="margin-top: 30px;">
+    <h2>Responsive Image with srcset</h2>
+    <img 
+      src="images/hero-small.gif"
+      srcset="
+        images/hero-small.gif 480w,
+        images/hero-medium.gif 768w,
+        images/hero-large.gif 1200w
+      "
+      sizes="(max-width: 600px) 480px,
+             (max-width: 900px) 768px,
+             1200px"
+      alt="Beautiful landscape"
+      class="img-zoom"
+    />
+  </section>
+
+</body>
+</html>
