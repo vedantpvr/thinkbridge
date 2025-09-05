@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    <h1>Create Your Account</h1>
+
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="fullname">Full Name</label><br>
+      <input type="text" id="fullname" name="fullname" required><br><br>
+
+      <label for="email">Email Address</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone Number</label><br>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Account Security</legend>
+
+      <label for="password">Password</label><br>
+      <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+      <label for="confirmpw">Confirm Password</label><br>
+      <input type="password" id="confirmpw" name="confirmpw" required><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferences</legend>
+
+      <label for="role">Select Role</label><br>
+      <select id="role" name="role">
+        <option value="">--Please choose--</option>
+        <option value="student">Student</option>
+        <option value="developer">Developer</option>
+        <option value="designer">Designer</option>
+      </select><br><br>
+    </fieldset>
+
+    <p>
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I agree to the Terms and Conditions</label><br>
+      <small>(You must agree before submitting)</small>
+    </p>
+
+    <p>Already have an account? <a href="login.html">Log in here</a></p>
+    <p>Forgot your password? <a href="reset.html">Reset it here</a></p>
+    <p>Back to <a href="index.html">Home</a></p>
+    <p>Contact <a href="contact.html">Support</a></p>
+    <p>Learn more <a href="about.html">About Us</a></p>
+
+    <button type="submit">Sign Up</button>
+  </form>
+</body>
+</html>

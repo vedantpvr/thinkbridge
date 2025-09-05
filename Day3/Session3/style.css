@@ -1,0 +1,81 @@
+/* ================
+   CSS Fundamentals
+   Demonstrating:
+   - Selectors
+   - Box Model
+   - Cascade
+   ================ */
+
+/* Universal selector */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Type selector */
+body {
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: #111827;
+}
+
+/* Class and ID selectors (not used here, but showing cascade) */
+form {
+  width: 70%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #2563eb; /* Box model: border */
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Descendant selector */
+form h1 {
+  color: orangered;
+  margin-bottom: 16px;
+}
+
+/* Grouped selectors */
+label, legend {
+  font-weight: bold;
+  color: #374151;
+}
+
+/* Input elements – showing padding, border, margin */
+input, select {
+  width: 100%;
+  padding: 18px;         /* Box model: padding */
+  margin-top: 20px;      /* Box model: margin */
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Pseudo-class selector */
+input:focus, select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Button styles */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 4px;
+  background: #9333ea;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* More specific selector overrides general button */
+form button:hover {
+  background: #7e22ce; /* Cascade + specificity */
+}
