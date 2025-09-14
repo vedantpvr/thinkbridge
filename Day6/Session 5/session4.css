@@ -1,0 +1,103 @@
+/* Global */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #f6d365, #fda085); /* orange-yellow */
+  color: #222;
+}
+
+/* Navigation */
+nav {
+  background: #333;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+nav a {
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+nav a:hover {
+  background: #555;
+}
+nav a.active {
+  font-weight: bold;
+  background: #e65100;
+  color: #fff;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom: 4px solid #e65100;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #222;
+}
+.progress {
+  background: #ddd;
+  border-radius: 5px;
+  height: 12px;
+  width: 80%;
+  margin: 15px auto;
+}
+.progress div {
+  background: #4caf50;
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+#progressText {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #333;
+}
+
+/* Main Content */
+main {
+  padding: 30px;
+  text-align: center;
+}
+main ul {
+  list-style: none;
+  padding: 0;
+}
+main ul li {
+  background: #fff;
+  margin: 10px auto;
+  padding: 12px 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  text-align: left;
+}
+
+/* Buttons */
+.buttons {
+  text-align: center;
+  margin: 30px;
+}
+button {
+  margin: 10px;
+  padding: 12px 24px;
+  background: #e65100;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+  background: #bf360c;
+  transform: scale(1.05);
+}

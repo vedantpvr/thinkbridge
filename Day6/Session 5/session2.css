@@ -1,0 +1,111 @@
+/* Global */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* blue gradient */
+  color: #222;
+}
+
+/* Navigation */
+nav {
+  background: #333;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+nav a {
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+nav a:hover {
+  background: #555;
+}
+nav a.active {
+  font-weight: bold;
+  background: #2196f3;
+  color: #fff;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom: 4px solid #2196f3;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #222;
+}
+.progress {
+  background: #ddd;
+  border-radius: 5px;
+  height: 12px;
+  width: 80%;
+  margin: 15px auto;
+}
+.progress div {
+  background: #4caf50;
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+#progressText {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #333;
+}
+
+/* Cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 25px;
+}
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  transition: transform 0.25s, box-shadow 0.25s;
+  border-top: 4px solid #2196f3;
+}
+.card h3 {
+  margin-top: 0;
+  color: #2196f3;
+}
+.card p {
+  color: #444;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 16px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+.buttons {
+  text-align: center;
+  margin: 20px;
+}
+button {
+  margin: 10px;
+  padding: 12px 24px;
+  background: #2196f3;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+  background: #1976d2;
+  transform: scale(1.05);
+}
