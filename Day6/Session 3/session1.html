@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 1 - HTML Basics</title>
+  <link rel="stylesheet" href="session1.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="session1.html" class="active">Session 1</a>
+    <a href="session2.html">Session 2</a>
+    <a href="session3.html">Session 3</a>
+    <a href="session4.html">Session 4</a>
+    <a href="session5.html">Session 5</a>
+  </nav>
+
+  <header>
+  <h1>Session 1: HTML Basics</h1>
+  <div class="progress">
+    <div id="progressFill" style="width:20%"></div>
+  </div>
+  <p id="progressText">20% Completed</p>
+</header>
+
+
+  <main>
+    <section>
+      <h2> <center> HTML Keywords </center> </h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>&lt;html&gt;</h3>
+          <p>Defines the root of an HTML document.</p>
+        </div>
+        <div class="card">
+          <h3>&lt;head&gt;</h3>
+          <p>Contains metadata, title, links, and scripts.</p>
+        </div>
+        <div class="card">
+          <h3>&lt;body&gt;</h3>
+          <p>Defines the content of the document (visible to users).</p>
+        </div>
+        <div class="card">
+          <h3>&lt;h1&gt; to &lt;h6&gt;</h3>
+          <p>Headings from largest (&lt;h1&gt;) to smallest (&lt;h6&gt;).</p>
+        </div>
+        <div class="card">
+          <h3>&lt;p&gt;</h3>
+          <p>Paragraph tag for text content.</p>
+        </div>
+        <div class="card">
+          <h3>&lt;a&gt;</h3>
+          <p>Defines hyperlinks to navigate between pages.</p>
+         </div>
+        <div class="card">
+          <h3>&lt;ul&gt; &lt;ol&gt; &lt;li&gt;</h3>
+          <p>Unordered (ul) and ordered (ol) lists with list items (li).</p>  
+        </div>
+        <div class="card">
+          <h3>&lt;div&gt;</h3>
+          <p>Generic container for grouping elements.</p>
+        </div>
+        <div class="card">
+          <h3>&lt;span&gt;</h3>
+          <p>Inline container for text or elements.</p>
+        </div>
+        <div class="card">
+          <h3>&lt;img&gt;</h3>
+          <p>Embeds images in the document.</p>
+        </div>
+        <div class="card">
+          <h3>&lt;link&gt;</h3>
+          <p>Links external resources like CSS files.</p>
+        </div>
+        <div class="card">
+          <h3>&lt;script&gt;</h3>
+          <p>Embeds or references JavaScript code.</p>
+          </div>
+      </div>
+    </section>
+
+    <section>
+      <button id="backBtn">⬅ Back to Home</button>
+      <button id="nextBtn">Next ➡ Session 3</button>
+    </section>
+  </main>
+
+  <script src="session1.js"></script>
+</body>
+</html>
