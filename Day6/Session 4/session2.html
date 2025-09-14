@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 2 - CSS Basics</title>
+  <link rel="stylesheet" href="session2.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="session1.html">Session 1</a>
+    <a href="session2.html" class="active">Session 2</a>
+    <a href="session3.html">Session 3</a>
+    <a href="session4.html">Session 4</a>
+    <a href="session5.html">Session 5</a>
+  </nav>
+
+  <header>
+    <h1>Session 2: CSS Basics</h1>
+    <div class="progress">
+      <div id="progressFill" style="width:40%"></div>
+    </div>
+    <p id="progressText">40% Completed</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>CSS Keywords</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>color</h3>
+          <p>Sets the text color of an element.</p>
+        </div>
+        <div class="card">
+          <h3>background-color</h3>
+          <p>Sets the background color of an element.</p>
+        </div>
+        <div class="card">
+          <h3>margin</h3>
+          <p>Defines space outside the element’s border.</p>
+        </div>
+        <div class="card">
+          <h3>padding</h3>
+          <p>Defines space inside the element, around content.</p>
+        </div>
+        <div class="card">
+          <h3>border</h3>
+          <p>Sets the border style, width, and color.</p>
+        </div>
+        <div class="card">
+          <h3>font-size</h3>
+          <p>Controls the size of text.</p>
+        </div>
+        <div class="card">
+          <h3>display</h3>
+          <p>Specifies how an element is displayed (block, inline, flex, etc.).</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="buttons">
+      <button id="backBtn">⬅ Back to Home</button>
+      <button id="nextBtn">Next ➡ Session 3</button>
+    </section>
+  </main>
+
+  <script src="session2.js"></script>
+</body>
+</html>
